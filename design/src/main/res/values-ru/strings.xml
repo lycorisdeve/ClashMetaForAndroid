@@ -57,6 +57,17 @@
     <string name="accept_http_content">Принимать только http(s)</string>
     <string name="at_least_15_minutes">Не менее 15 минут или пустой</string>
     <string name="should_not_be_blank">Не должно быть пустым</string>
+    <string name="age_secret_key">Секретный ключ Age</string>
+    <string name="age_secret_key_hint">AGE-SECRET-KEY-… (необязательно)</string>
+    <string name="age_secret_key_error">Недопустимый формат. Ключ должен начинаться с AGE-SECRET-KEY-</string>
+    <string name="age_key_helper">Ключ Age</string>
+    <string name="age_key_category">Ключ Age</string>
+    <string name="age_key_generate_summary">Нажмите, чтобы сгенерировать</string>
+    <string name="age_public_key">Открытый ключ Age</string>
+    <string name="age_public_key_error">Недействительный открытый ключ Age</string>
+    <string name="age_key_generate">Сгенерировать</string>
+    <string name="age_key_to_public">Из секретного ключа</string>
+    <string name="age_key_copy">Копировать</string>
     <string name="detail">Детали</string>
     <string name="update">Обновить</string>
     <string name="edit">Изменить</string>
@@ -65,6 +76,8 @@
     <string name="import_">Импорт</string>
     <string name="properties">Свойства</string>
     <string name="duplicate">Создать копию</string>
+    <string name="share_qr_code">Поделиться QR-кодом</string>
+    <string name="qr_code_generation_failed">Не удалось создать QR-код для этой ссылки.</string>
     <string name="active_unsaved_tips">Профиль должен быть сохранён перед активацией</string>
 
     <string name="exit_without_save">Выйти без сохранения</string>

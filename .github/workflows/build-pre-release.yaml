@@ -25,10 +25,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v5
 
       - name: Setup Go
-        uses: actions/setup-go@v6
+        uses: actions/setup-go@4a3601121dd01d1626a1e23e37211e3254c1c06c
         with:
-          go-version: "1.26"
-          check-latest: true # Always check for the latest patch release
+          go-download-base-url: 'https://github.com/MetaCubeX/go/releases/download/build'
+          go-version: '1.26'
 
       - name: Apply Patches
         run: |
@@ -76,14 +76,14 @@ jobs:
           delete_release: true
 
       - name: Tag Repo
-        uses: richardsimko/update-tag@v1
+        uses: richardsimko/update-tag@v3
         with:
           tag_name: Prerelease-alpha
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload Alpha
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         if: ${{  success() }}
         with:
           tag_name: Prerelease-alpha
@@ -92,4 +92,4 @@ jobs:
           generate_release_notes: true
 
       - name: Release Changelog Builder
-        uses: mikepenz/release-changelog-builder-action@v4
+        uses: mikepenz/release-changelog-builder-action@v6
